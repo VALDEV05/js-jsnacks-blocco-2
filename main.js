@@ -30,4 +30,4 @@ for (let i = 0; i < bicycles.length; i++) {
     }
 }
 
-placeToPrint.innerHTML = `<div class = 'result'>La bicicletta più leggera ha un peso di ${lower}kg,<br> il suo nome è: <span class="fw-bold">${bicycles[index].name}</span></div>`
+placeToPrint.innerHTML = `<div class = 'result d-flex align-items-center justify-content-center bg-dark text-light' style= 'height: 100vh'>La bicicletta più leggera ha un peso di ${lower}kg,<br> il suo nome è: ${bicycles[index].name}</div>`
