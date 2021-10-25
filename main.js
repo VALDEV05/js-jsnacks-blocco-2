@@ -20,6 +20,7 @@ const bicycles = [{
 ]
 
 console.log(bicycles[0].weight);
+//Guardo il peso della prima e lo aggiungo come il peso più basso.
 const lower = bicycles[0].weight;
 const index = 0;
 for (let i = 0; i < bicycles.length; i++) {
@@ -29,4 +30,4 @@ for (let i = 0; i < bicycles.length; i++) {
     }
 }
 
-placeToPrint.innerHTML = "Peso minore : " + lower + " della bicicletta : " + bicycles[identificatore].name
+placeToPrint.innerHTML = `<div class = 'result'>La bicicletta più leggera ha un peso di ${lower}kg,<br> il suo nome è: <span class="fw-bold">${bicycles[index].name}</span></div>`
